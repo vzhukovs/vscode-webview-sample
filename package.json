@@ -11,15 +11,14 @@
 		"Other"
 	],
 	"activationEvents": [
-		"onFileSystem:memfs",
-		"onCommand:memfs.showWebview"
+		"onCommand:sidecar.showWebview"
 	],
 	"contributes": {
 		"commands": [
 			{
-				"command": "memfs.showWebview",
+				"command": "sidecar.showWebview",
 				"title": "Show Webview",
-				"category": "MemFS"
+				"category": "Side Car"
 			}
 		]
 	},
