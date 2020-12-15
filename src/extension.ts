@@ -45,8 +45,8 @@ class MemFSWebviewPanel {
 		// Get resource paths
 		const styleUri = webview.asWebviewUri(vscode.Uri.parse(`${sidecarScheme}:${extensionUri}/media/styles.css`));
 		// const styleUri = '';
-		const codiconsUri = webview.asWebviewUri(vscode.Uri.parse(`${sidecarScheme}:${extensionUri}/mediacodicon.css`));
-		const codiconsFontUri = webview.asWebviewUri(vscode.Uri.parse(`${sidecarScheme}:${extensionUri}/mediacodicon.ttf`));
+		const codiconsUri = webview.asWebviewUri(vscode.Uri.parse(`${sidecarScheme}:${extensionUri}/media/codicon.css`));
+		const codiconsFontUri = webview.asWebviewUri(vscode.Uri.parse(`${sidecarScheme}:${extensionUri}/media/codicon.ttf`));
 
 		return `<!DOCTYPE html>
 			<html lang="en">
