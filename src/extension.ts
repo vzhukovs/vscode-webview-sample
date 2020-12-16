@@ -3,11 +3,11 @@ import * as vscode from 'vscode';
 export function activate(context: vscode.ExtensionContext) {
 
 	const sidecarName = process.env.CHE_MACHINE_NAME;
-    if (sidecarName == undefined) {
-	  console.log('Side Car name is undefined.');
-	  return;
+	if (sidecarName == undefined) {
+		console.log('Side Car name is undefined.');
+		return;
 	}
-	
+
 	const sidecarScheme = `file-sidecar-${sidecarName}`;
 	console.log(`Side Car scheme: ${sidecarScheme}`);
 	console.log(`Content extension path: ${context.extensionPath}`);
